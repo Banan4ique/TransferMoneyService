@@ -1,0 +1,14 @@
+
+services:
+  app:
+    image: 'apptm:latest'
+    container_name: apptm_compose
+    build: ./
+    ports:
+      - '8080:8080'
+  node:
+    image: 'transfer-master-front:latest'
+    container_name: node_compose
+    build: ./
+    ports:
+      - '3000:3000'

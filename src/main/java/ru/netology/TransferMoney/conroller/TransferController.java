@@ -1,6 +1,7 @@
 package ru.netology.TransferMoney.conroller;
 
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,5 +32,10 @@ public class TransferController {
         confirmation.setOperationId(transferService.getId());
         confirmation.setCode("12345");
         return "OperationId = " + transferService.confirm(confirmation);
+    }
+
+    @GetMapping("/")
+    public String get() {
+        return "Transfer service is working";
     }
 }
