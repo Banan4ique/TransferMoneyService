@@ -3,6 +3,7 @@
 Настройка перед запуском: <br>
 - back: docker build -t apptm:1.0 -t apptm:latest . <br>
 - front: docker build -t transfer-master-front:1.0 -t transfer-master-front:latest . <br>
+[Ссылка на репозиторий front части](https://github.com/Banan4ique/TransferMoneyFront)<br>
 Команда запуска: docker-compose up app node -d <br>
 
 Порты:
