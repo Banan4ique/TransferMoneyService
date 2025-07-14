@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Repository
 public class TransferRepository {
 
-    private AtomicInteger id;
+    private final AtomicInteger id;
 
     public TransferRepository() {
         id = new AtomicInteger(0);

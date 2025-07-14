@@ -4,9 +4,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import ru.netology.TransferMoney.exceptions.ConfirmationException;
-import ru.netology.TransferMoney.exceptions.InputDataException;
-import ru.netology.TransferMoney.exceptions.TransferException;
+import ru.netology.TransferMoney.exception.ConfirmationException;
+import ru.netology.TransferMoney.exception.InputDataException;
+import ru.netology.TransferMoney.exception.TransferException;
 
 @RestControllerAdvice
 public class ExceptionHandlerAdvice {
